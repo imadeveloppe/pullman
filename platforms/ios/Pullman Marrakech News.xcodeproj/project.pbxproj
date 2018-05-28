@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		07BB929705284D74AC79D4DA /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A2F812AC26455AA537CC0E /* FirebaseMessaging.framework */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D4D52A2A3CE4DEFBACFB6B7 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D9C973174A4C7ABA25FCAA /* IonicKeyboard.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		21508E8C288F439C9216AC1A /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D39C6D40FCF2445D91CB8CB4 /* CDVStatusBar.m */; };
+		2237AF4AEE1E4FC29F879C6E /* AppDelegate+FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C807E515E14163A68CA0D7 /* AppDelegate+FirebasePlugin.m */; };
+		2B66C0FC24CB4BF6AC54D063 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEAB60AA9C74C5D8054FFF7 /* Protobuf.framework */; };
+		2F0F5557F6104E05B45EAB4B /* FirebaseCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A56CF14EADF423E9369A974 /* FirebaseCrash.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
+		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
+		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
+		3C80BD24A76F4686A4169228 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F836D476A2124A4DA4577FEE /* FirebaseCoreDiagnostics.framework */; };
+		3FAD307263AF4B8BB0C2F853 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C9109FC1D8412FB9D9A220 /* CDVSplashScreen.m */; };
+		54183E3EE09A4A4FB5D1BBBC /* FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A0E2ECB6D64687B2CB48E8 /* FirebasePlugin.m */; };
+		569F9F41B85945E4BC81DE88 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20E8BFDCBE0406580E91808 /* FirebaseAuth.framework */; };
+		581428A00BB747DE870F450A /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C2CB0145CB4383B1439AAB /* nanopb.framework */; };
+		6ED36802BDE9427191016BC8 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77ACC9C8BD2F4422951E1E91 /* FirebaseAnalytics.framework */; };
+		7A7EDB01A70B403193D54674 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399554E0C0284901B1F0EDFF /* FirebaseNanoPB.framework */; };
+		8BF2183FEB0542F785C71970 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 35269325442C45B18748FF30 /* CDVViewController+SplashScreen.m */; };
+		951E139BB3424B2DBF43A434 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EDC44F985B4CA8B0D1E7DE /* FirebaseCore.framework */; };
+		A14878D2F6D04697988FAE43 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7F092DC4644CD9A21DA39 /* CDVDevice.m */; };
+		A818311D1E4F420787485169 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC51A2A7E9142888A899E63 /* CDVLogger.m */; };
+		A8F4C8E460FC4FD992FD955D /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46906611DBE4EE5BC8BC6B8 /* FirebaseRemoteConfig.framework */; };
+		BDF6831178D546BBA856814F /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173D41B84FEA44D68E6AD022 /* FirebaseABTesting.framework */; };
+		C3A762F062AF40DAA714AF22 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFA579429594A1CA535EDBD /* FirebaseInstanceID.framework */; };
+		C50259AA114B4C8BAE22E831 /* FirebasePerformance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E39A9F1C814425BA02A43B /* FirebasePerformance.framework */; };
+		D4CDB76881B841AAA1C3EF5C /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0D67E3644344EC84DFEBEF /* GTMSessionFetcher.framework */; };
+		D58A9DD24079481F8DCDEB49 /* FirebaseMethodSwizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3CF119DC3C42E993FCEFC3 /* FirebaseMethodSwizzler.framework */; };
+		D6C8583B3AD94A1D8B219E6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13FDF314D311470092739A78 /* GoogleService-Info.plist */; };
+		EFB936C716CE44F2AE556BA9 /* FirebaseISASwizzler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081376F33B2F4E5E8EAA87AC /* FirebaseISASwizzler.framework */; };
+		FDECDF61389646C9B4020831 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78067EF7337B4106A0D4C7AF /* GoogleToolboxForMac.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Pullman Marrakech News/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		02DA2D611D254EAB8B97471B /* CDVLogger.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
+		081376F33B2F4E5E8EAA87AC /* FirebaseISASwizzler.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseISASwizzler.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseISASwizzler.framework"; sourceTree = "<group>"; };
+		0EE84E623E404D99B9AB3B1E /* IonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; };
+		0F3CF119DC3C42E993FCEFC3 /* FirebaseMethodSwizzler.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseMethodSwizzler.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseMethodSwizzler.framework"; sourceTree = "<group>"; };
+		13FDF314D311470092739A78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		173D41B84FEA44D68E6AD022 /* FirebaseABTesting.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseABTesting.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseABTesting.framework"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Pullman Marrakech News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pullman Marrakech News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		31EDC44F985B4CA8B0D1E7DE /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseCore.framework"; sourceTree = "<group>"; };
+		32A794E469B944B8A299ECC6 /* FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePlugin.h; path = "cordova-plugin-firebase/FirebasePlugin.h"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Pullman Marrakech News-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pullman Marrakech News-Prefix.pch"; sourceTree = "<group>"; };
+		35269325442C45B18748FF30 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		38C807E515E14163A68CA0D7 /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; };
+		399554E0C0284901B1F0EDFF /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseNanoPB.framework"; sourceTree = "<group>"; };
+		44A0E2ECB6D64687B2CB48E8 /* FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePlugin.m; path = "cordova-plugin-firebase/FirebasePlugin.m"; sourceTree = "<group>"; };
+		4BD6F87253A04C11A4A1BB7B /* Firebase.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = "cordova-plugin-firebase/Firebase.h"; sourceTree = "<group>"; };
+		4FEAB60AA9C74C5D8054FFF7 /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/Protobuf.framework"; sourceTree = "<group>"; };
+		5A56CF14EADF423E9369A974 /* FirebaseCrash.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseCrash.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseCrash.framework"; sourceTree = "<group>"; };
+		6BCE432D83DB4CC68456C53F /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		6D4A12709591485EBC32BB2E /* AppDelegate+FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+FirebasePlugin.h"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.h"; sourceTree = "<group>"; };
+		77ACC9C8BD2F4422951E1E91 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseAnalytics.framework"; sourceTree = "<group>"; };
+		78067EF7337B4106A0D4C7AF /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		7E0D67E3644344EC84DFEBEF /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		88D4D0E020AC8379006CE13A /* Pullman Marrakech News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Pullman Marrakech News.entitlements"; path = "Pullman Marrakech News/Pullman Marrakech News.entitlements"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Pullman Marrakech News-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Pullman Marrakech News-Info.plist"; path = "Pullman Marrakech News/Pullman Marrakech News-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		9EFA579429594A1CA535EDBD /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseInstanceID.framework"; sourceTree = "<group>"; };
+		A6A2F812AC26455AA537CC0E /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseMessaging.framework"; sourceTree = "<group>"; };
+		A9C2CB0145CB4383B1439AAB /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/nanopb.framework"; sourceTree = "<group>"; };
+		B20E8BFDCBE0406580E91808 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseAuth.framework"; sourceTree = "<group>"; };
+		B258156E45184C62B32610DC /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		BFC51A2A7E9142888A899E63 /* CDVLogger.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
+		C8D9C973174A4C7ABA25FCAA /* IonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; };
+		D39C6D40FCF2445D91CB8CB4 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		D7E39A9F1C814425BA02A43B /* FirebasePerformance.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebasePerformance.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebasePerformance.framework"; sourceTree = "<group>"; };
+		DA6CA28FAEBB4BA9A8EF8E1F /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		E2F1AE54D3724D5F8663A2FD /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		E46906611DBE4EE5BC8BC6B8 /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseRemoteConfig.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseRemoteConfig.framework"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F4C9109FC1D8412FB9D9A220 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		F836D476A2124A4DA4577FEE /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = "Pullman Marrakech News/Plugins/cordova-plugin-firebase/FirebaseCoreDiagnostics.framework"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "Pullman Marrakech News/config.xml"; sourceTree = "<group>"; };
+		F9E7F092DC4644CD9A21DA39 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				6ED36802BDE9427191016BC8 /* FirebaseAnalytics.framework in Frameworks */,
+				951E139BB3424B2DBF43A434 /* FirebaseCore.framework in Frameworks */,
+				3C80BD24A76F4686A4169228 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				C3A762F062AF40DAA714AF22 /* FirebaseInstanceID.framework in Frameworks */,
+				7A7EDB01A70B403193D54674 /* FirebaseNanoPB.framework in Frameworks */,
+				FDECDF61389646C9B4020831 /* GoogleToolboxForMac.framework in Frameworks */,
+				581428A00BB747DE870F450A /* nanopb.framework in Frameworks */,
+				2B66C0FC24CB4BF6AC54D063 /* Protobuf.framework in Frameworks */,
+				07BB929705284D74AC79D4DA /* FirebaseMessaging.framework in Frameworks */,
+				2F0F5557F6104E05B45EAB4B /* FirebaseCrash.framework in Frameworks */,
+				A8F4C8E460FC4FD992FD955D /* FirebaseRemoteConfig.framework in Frameworks */,
+				BDF6831178D546BBA856814F /* FirebaseABTesting.framework in Frameworks */,
+				569F9F41B85945E4BC81DE88 /* FirebaseAuth.framework in Frameworks */,
+				D4CDB76881B841AAA1C3EF5C /* GTMSessionFetcher.framework in Frameworks */,
+				C50259AA114B4C8BAE22E831 /* FirebasePerformance.framework in Frameworks */,
+				EFB936C716CE44F2AE556BA9 /* FirebaseISASwizzler.framework in Frameworks */,
+				D58A9DD24079481F8DCDEB49 /* FirebaseMethodSwizzler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "Pullman Marrakech News/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Pullman Marrakech News.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				88D4D0E020AC8379006CE13A /* Pullman Marrakech News.entitlements */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Pullman Marrakech News-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "Pullman Marrakech News";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* Pullman Marrakech News-Info.plist */,
+				13FDF314D311470092739A78 /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			path = "Pullman Marrakech News/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77ACC9C8BD2F4422951E1E91 /* FirebaseAnalytics.framework */,
+				31EDC44F985B4CA8B0D1E7DE /* FirebaseCore.framework */,
+				F836D476A2124A4DA4577FEE /* FirebaseCoreDiagnostics.framework */,
+				9EFA579429594A1CA535EDBD /* FirebaseInstanceID.framework */,
+				399554E0C0284901B1F0EDFF /* FirebaseNanoPB.framework */,
+				78067EF7337B4106A0D4C7AF /* GoogleToolboxForMac.framework */,
+				A9C2CB0145CB4383B1439AAB /* nanopb.framework */,
+				4FEAB60AA9C74C5D8054FFF7 /* Protobuf.framework */,
+				A6A2F812AC26455AA537CC0E /* FirebaseMessaging.framework */,
+				5A56CF14EADF423E9369A974 /* FirebaseCrash.framework */,
+				E46906611DBE4EE5BC8BC6B8 /* FirebaseRemoteConfig.framework */,
+				173D41B84FEA44D68E6AD022 /* FirebaseABTesting.framework */,
+				B20E8BFDCBE0406580E91808 /* FirebaseAuth.framework */,
+				7E0D67E3644344EC84DFEBEF /* GTMSessionFetcher.framework */,
+				D7E39A9F1C814425BA02A43B /* FirebasePerformance.framework */,
+				081376F33B2F4E5E8EAA87AC /* FirebaseISASwizzler.framework */,
+				0F3CF119DC3C42E993FCEFC3 /* FirebaseMethodSwizzler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				BFC51A2A7E9142888A899E63 /* CDVLogger.m */,
+				02DA2D611D254EAB8B97471B /* CDVLogger.h */,
+				F9E7F092DC4644CD9A21DA39 /* CDVDevice.m */,
+				E2F1AE54D3724D5F8663A2FD /* CDVDevice.h */,
+				F4C9109FC1D8412FB9D9A220 /* CDVSplashScreen.m */,
+				35269325442C45B18748FF30 /* CDVViewController+SplashScreen.m */,
+				DA6CA28FAEBB4BA9A8EF8E1F /* CDVSplashScreen.h */,
+				6BCE432D83DB4CC68456C53F /* CDVViewController+SplashScreen.h */,
+				D39C6D40FCF2445D91CB8CB4 /* CDVStatusBar.m */,
+				B258156E45184C62B32610DC /* CDVStatusBar.h */,
+				C8D9C973174A4C7ABA25FCAA /* IonicKeyboard.m */,
+				0EE84E623E404D99B9AB3B1E /* IonicKeyboard.h */,
+				38C807E515E14163A68CA0D7 /* AppDelegate+FirebasePlugin.m */,
+				44A0E2ECB6D64687B2CB48E8 /* FirebasePlugin.m */,
+				6D4A12709591485EBC32BB2E /* AppDelegate+FirebasePlugin.h */,
+				32A794E469B944B8A299ECC6 /* FirebasePlugin.h */,
+				4BD6F87253A04C11A4A1BB7B /* Firebase.h */,
+			);
+			name = Plugins;
+			path = "Pullman Marrakech News/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Pullman Marrakech News */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Pullman Marrakech News" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "Pullman Marrakech News";
+			productName = "Pullman Marrakech News";
+			productReference = 1D6058910D05DD3D006BFB54 /* Pullman Marrakech News.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 649777DC2X;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pullman Marrakech News" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Pullman Marrakech News */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */,
+				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				D6C8583B3AD94A1D8B219E6F /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				A818311D1E4F420787485169 /* CDVLogger.m in Sources */,
+				A14878D2F6D04697988FAE43 /* CDVDevice.m in Sources */,
+				3FAD307263AF4B8BB0C2F853 /* CDVSplashScreen.m in Sources */,
+				8BF2183FEB0542F785C71970 /* CDVViewController+SplashScreen.m in Sources */,
+				21508E8C288F439C9216AC1A /* CDVStatusBar.m in Sources */,
+				1D4D52A2A3CE4DEFBACFB6B7 /* IonicKeyboard.m in Sources */,
+				2237AF4AEE1E4FC29F879C6E /* AppDelegate+FirebasePlugin.m in Sources */,
+				54183E3EE09A4A4FB5D1BBBC /* FirebasePlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Pullman Marrakech News/Pullman Marrakech News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 649777DC2X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pullman Marrakech News/Pullman Marrakech News-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Pullman Marrakech News/Pullman Marrakech News-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_NAME = "Pullman Marrakech News";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = "Pullman Marrakech News/Pullman Marrakech News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 649777DC2X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pullman Marrakech News/Pullman Marrakech News-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "Pullman Marrakech News/Pullman Marrakech News-Info.plist";
+				PRODUCT_NAME = "Pullman Marrakech News";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Pullman Marrakech News";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+					"\"Pullman Marrakech News/Plugins/cordova-plugin-firebase\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "Pullman Marrakech News";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Pullman Marrakech News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Pullman Marrakech News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

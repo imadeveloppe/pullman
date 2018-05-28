@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+
+<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+</style>
+
+<script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+<script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+function livreDor(){
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+	autoplay: true,
+    responsiveClass:true,
+    nav:false,
+	loop:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+}
+$(function(){
+	setTimeout(livreDor, 3000);
+})
+</script>
+<script src="js/jquery.simpleWeather.min.js"></script>
+  <script>
+  jQuery(function() {
+	  if(jQuery( "#accordion" ).length){
+		jQuery( "#accordion" ).accordion({
+		  heightStyle: "content",
+		  collapsible: true
+		});
+		jQuery('#ui-id-1').click();
+	  }
+  });
+  </script>
+<script>
+$.getJSON('http://pullman-marrakech.com/application/donnees.json',function(data){
+		$('.informations-home img').attr('src',data.informations_primordiales);
+		$('.informations-home p').html(data.texte_informations_primordiales_en);
+		if(data.livre_dor_en.length == 0){
+			$('.livre-dor-titre').hide();
+		}
+		for (var i = 0; i < data.livre_dor_en.length; i++) {
+			$("#livre-dor").append('<li><div class="livre"><p>'+data.livre_dor_en[i].texte_lo_en+'</p><h3>« '+data.livre_dor[i].titre_lo+' »</h3></div></li>');
+		};
+});
+$(document).ready(function() {
+    function RunClock(){
+       var now = new Date();
+        var annee   = now.getFullYear();
+        
+        var mois    = now.getMonth() + 1;     
+        if(mois < 10){
+            var mois = '0'+(eval(now.getMonth()) + eval(1));
+        }
+
+        var jour    = now.getDate();   
+        if(jour < 10){
+            var jour = '0'+now.getDate();
+        }
+
+        var heure   = now.getHours();      
+        if(heure < 10){
+            var heure = '0'+now.getHours();
+        }
+
+        var minute  = now.getMinutes();        
+        if(minute < 10){
+            var minute = '0'+now.getMinutes();
+        }
+
+        var seconde = now.getSeconds();
+        if(seconde < 10){
+            var seconde = '0'+now.getSeconds();
+        }
+
+        var date_aujourdhui = mois+"/"+jour+"/"+annee+" - "+heure+":"+minute+":"+seconde;
+        $('.date').html(date_aujourdhui); 
+    }
+	setInterval(RunClock,"1000");
+
+  $.simpleWeather({
+    location: 'Marrakech, MA',
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      html = '<i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg; <img src="images/termo.png" alt="">';
+	  html2 = '<span>Tomorrow </span> '+weather.forecast[1].high+'<sup>°</sup><img src="images/termo-noir.png" alt="">';
+  
+      $(".meteo-aujourdhui").html(html);
+      $(".meteo-demain").html(html2);
+	  console.log(weather.forecast)
+    },
+    error: function(error) {
+      $(".meteo-aujourdhui").html('<p>Error</p>');
+    }
+  });
+});
+</script>
+
+<title>PULLMAN MARRAKECH PALMERAIE RESORT & SPA</title>
+</head>
+
+<body>
+<div id="weather"></div>
+<div id="site">
+<div id="header">
+	<div class="logo"><a href="index-fr.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="header-right"><img src="images/circle-header.png" alt=""></div>
+</div>
+<div id="main">
+        <div class="container">
+        <div class="row mb15">
+			<div class="col-sm-6">
+                    <div class="informations-home">
+                        <img src="images/img-01.jpg" alt="" class="w100">
+                        <p class="text-info text-center"></p>
+                    </div>
+                </div>
+			<div class="col-sm-6">
+                        <div class="meteo">
+                            <img src="images/photo-meteo.jpg" alt="" class="w100">
+                            <div class="meteo-today">
+                                <p class="text-center date text-uppercase"></p>
+                                <p class="meteo-aujourdhui text-center"></p>
+                                <p class="meteo-demain text-center text-uppercase"></p>
+                            </div>
+                        </div>
+                        <div class="menu-home">
+                            <ul>
+                                <li><a date-href="" class="link text-center" href="infos-pratiques-en.html">A PRACTICAL PEACE OF INFORMATION</a></li>
+                                <li><a date-href="" class="link text-center" href="que-faire-aujourdhui-en.html">WHAT TO DO TODAY?</a></li>
+                                <li><a date-href="" class="link text-center" href="a-table-en.html">LET'S EAT</a></li>
+                            </ul>
+                        </div>
+                </div>
+        </div>
+        <div class="row mb15">
+        	<div class="col-sm-12" style="position:relative;">            	
+        	<img src="images/img-principale.jpg" alt="" class="w100">
+            <h2 class="livre-dor-titre">Golden Book</h2>
+            <ul id="livre-dor" class="owl-carousel">
+            </ul>
+            </div>
+        </div>
+        <div class="row footer">        
+
+        	<div class="col-sm-12 reseaux-sociaux">
+                	<div class="col-sm-6">
+                    	<h2>SHARE YOUR MEMORIES!</h2>
+                        <ul>
+                        	<li class="instagram"><a href="#" onclick="window.open('https://www.instagram.com/pullmanmarrakech/', '_system');">#PULLMANMARRAKECH</a></li>
+                        	<li class="twitter">#PULLMANMARRAKECH</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                    	<h2>REMEMBER...</h2>
+                        <ul>
+                        	<li class="facebook"><a href="#" onclick="window.open('https://www.facebook.com/pullmanmarrakech/', '_system');">PULLMAN MARRAKECH RESORT & SPA OFFICIEL</a></li>
+                        	<li class="youtube"><a href="#" onclick="window.open('https://www.youtube.com/channel/UCE7dGoMbRX9lMA6N2-eyqCA', '_system');">PULLMAN MARRAKECH</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</body>
+</html>

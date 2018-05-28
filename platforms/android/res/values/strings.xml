@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pullman Marrakech News</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    
+    <string name="google_app_id">1:547605105167:android:fd53a152c89e557b</string>
+    <string name="google_api_key">AIzaSyBdFbLnUmqUa2b-TOq-QvIWr-AmFdiXR2w</string>
+</resources>

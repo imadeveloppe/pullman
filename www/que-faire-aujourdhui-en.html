@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+
+<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+</style>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+<script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+<script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+<script src="js/jquery-ui.js"></script>
+<script>
+$.getJSON('http://pullman-marrakech.com/application/donnees.json',function(data){
+		$('.good-morning h2').text(data.titre_en);
+		$('.good-morning img').attr('src',data.photo);
+		$('.good-morning p').html(data.texte_en);
+		
+		$('.cet-apres-midi h2').text(data.titre_02_en);
+		$('.cet-apres-midi img').attr('src',data.photo_02);
+		$('.cet-apres-midi p').html(data.texte_02_en);
+		
+		$('.en-soiree h2').text(data.titre_03_en);
+		$('.en-soiree img').attr('src',data.photo_03);
+		$('.en-soiree p').html(data.texte_03_en);
+});
+  jQuery(function() {
+	  if(jQuery( "#accordion" ).length){
+		jQuery( "#accordion" ).accordion({
+		  heightStyle: "content",
+		  collapsible: true
+		});
+		jQuery('#ui-id-1').click();
+	  }
+  });
+  </script>
+<title>PULLMAN MARRAKECH PALMERAIE RESORT & SPA</title>
+</head>
+
+<body>
+<div id="site">
+<div id="header">
+	<div class="logo"><a href="index-en.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="header-right"><img src="images/circle-header.png" alt=""></div>
+</div>
+<div id="main">
+        <div class="container">
+		        <div class="row">
+        	<div class="col-sm-6">
+            	<h2 class="text-center text-uppercase page-titre bg-bis">WHAT TO DO TODAY?</h2>
+                <ul class="row mb15 a-table">
+        			<li class="col-sm-12 good-morning">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/01.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>GOOD MORNING !</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">09H30 LOUNGE<br>
+
+REVEIL MUSCULAIRE<br>
+<br>
+11H00 OASIS<br>
+ATELIER FLORAL
+
+</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-12 cet-apres-midi">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/02.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>CET APRES-MIDi</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">15H00 PISCINE<br>
+AQUAGYM</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-12 en-soiree">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/03.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>EN SOIREE…</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">21H00 BAR AMBIANCE<br>
+
+SOIREE SALSA
+
+</p></div>
+                        </div>
+                    </div>
+                </li>
+		        </ul>
+            </div>
+        	<div class="col-sm-6">
+            	<h2 class="text-center text-uppercase page-titre bg-bis">LEISURES</h2>
+                                <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist" style="margin-bottom:20px;">
+                                    <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>KIDS VILLAGE</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Daily opened except on Monday for disinfection of premises.</p>
+<p><img width="300" height="200" alt="17 (35)" src="images/17-35-300x200.jpg" class="alignnone size-medium wp-image-111"></p>
+<hr>
+<p style="text-align: center;">9:30am – 12:30pm / 2:30pm – 5:30pm</p>
+<hr>
+<p style="text-align: center;">1-4 years old : Charged service<br>
+4-12 years old : Free service</p>
+<hr>
+<p>Activities: Karting, riding camel, climbing, soccer, pottery, miniature golf, table tennis, canoe, pedal boats, trampoline.<br>
+Theme nights throughout the school holidays.
+</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SPA</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true"><p style="text-align: center;"><strong>Daily opened from 10am to 10pm</strong></p>
+<hr>
+<p style="text-align: center;">The <strong>Spa Lounge by Nuxe</strong> invites you to relax by offering you a choice of body care and face, and a selection of massages tailored to your needs ... A huge range of <strong>Nuxe</strong> products are used for your enjoyment as well as products care of <strong>our great Master Perfume Benchâabane...</strong></p>
+<p><img width="256" height="300" alt="spa-07" src="images/spa-07-256x300.jpg" class="alignnone size-medium wp-image-71"></p>
+<p style="text-align: center;">Come to discover our care menu on site…</p>
+<hr>
+<p style="text-align: center;">Dial <strong>60</strong> from your room</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>POOL</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Daily opened <strong>from 9am to 6pm</strong></p>
+<hr>
+<p style="text-align: center;">For <strong>a pool towel</strong>, please present the card that was assigned to you when you arrived, to our poolboy while visiting the PullHouse.</p>
+<hr>
+<p style="text-align: center;"><strong>Toilets</strong> are available next to the PullHouse.</p>
+<hr>
+<p style="text-align: center;"><img width="300" height="161" alt="piscne (1)" src="images/piscne-1-300x161.jpg" class="alignnone size-medium wp-image-141"></p>
+<p style="text-align: center;">Sit back, relax & ... Enjoy!</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>PEDALO &amp; KAYAK </h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Our pedal boats and kayaks are available  <strong>from 9am until 12pm & from 3pm until 5pm </strong> at the lake.</p>
+<hr>
+<p style="text-align: center;">Children <strong>under 12</strong> must wear a <strong>life jacket</strong> (Available at PullHouse)</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>TENNIS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Your <strong>2 tennis courts</strong> are open <strong>from 10am until 6pm, by reservation at the reception.</strong></p>
+<hr>
+<p style="text-align: center;">You can loan equipment on request at PullHouse.</p>
+<hr>
+<p style="text-align: center;">A <strong>tennis coach</strong> is available from monday to saturday on request at the reception</p>
+<p><img width="300" height="200" alt="LEISURE" src="images/LEISURE-300x200.jpg" class="alignnone size-medium wp-image-113"></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>TABLE TENNIS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: block;" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="false"><p style="text-align: center;">Equipment is available at PullHouse <strong>during pool opening times</strong>.</p>
+<p style="text-align: center;"><img width="220" height="147" alt="maxresdefault-1" src="images/maxresdefault-1-300x200.jpg" class="aligncenter wp-image-131 "></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>MINIATURE GOLF</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Equipment is available at PullHouse <strong>during pool opening times</strong>.</p>
+<p><img width="300" height="300" alt="mini golf" src="images/mini-golf-300x300.jpg" class="alignnone size-medium wp-image-143"></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>FITNESS TRAIL</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true"><p style="text-align: center;">A fitness trail has been carefully designed for you by a sports professional.</p>
+<p style="text-align: center;">From a distance of 1.1 km, it is littered with key points for you to work more body parts.</p>
+<p style="text-align: center;"><img width="200" height="300" alt="Capture d'écran 2016-04-10 à 12.10.03" src="images/capture-decran-200x300.png" class="alignnone size-medium wp-image-138"></p>
+<p style="text-align: center;">Don't hesitate to contact <strong>Youssef</strong> for further information.</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>FITNESS CENTER</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Daily opened <strong>from 8 am to 10 pm</strong> and accessible outside of these hours on request at the reception</p>
+<hr>
+<p><img width="300" height="201" alt="fitness-lowcoast-rue-du-bien-etre" src="images/fitness-lowcoast-rue-du-bien-etre-300x201.jpg" class="alignnone size-medium wp-image-159"></p>
+<ul>
+<li>1 elliptical</li>
+<li>2 bikes</li>
+<li>2 treadmills</li>
+<li>Steps</li>
+<li>Musculation bench</li>
+<li>Dumbbells</li>
+<li>Fitness mats...</li>
+</li>
+</ul>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>PRIVILEGE Lounge & Garden</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true">
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-style:italic; font-size:15px; text-align: left;" ><sup style="font-size:26px; font-family:Arial, Helvetica, sans-serif; top:5px;">&ldquo;</sup>A sublime blend of softness and serenity...<sub style="font-size:26px; font-family:Arial, Helvetica, sans-serif; bottom:-19px;">&rdquo;</sub></p>
+<p style="text-align: center;"><img width="300" height="197" alt="DSC_2055" src="images/DSC_2055-300x197.jpg" class="alignnone size-medium wp-image-153"></p>
+<p style="text-align: center;">Daily opened <strong>from 4 pm to midnight</strong>, the Pullman 'Cosy' place offers you a selection of drinks, shishas and cigars to share by the fireside or in the middle of the gardens…</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>TOUR DESK</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Daily opened except on Tuesday, <strong>from 9am until 1pm & from 2pm until 6pm</strong>, your tour desk offers you a <strong>multitude of activities on Marrakech and its surroundings</strong>.</p>
+<p style="text-align: center;"><img width="300" height="114" alt="imgres" src="images/imgres-1-300x114.jpg" class="alignnone size-medium wp-image-134"></p>
+<p style="text-align: center;">Don't hesitate to have a look around, or call <strong>88</strong> from your room</p>
+</div>                 
+                                        </div>
+                                </div>
+        </div>     
+                </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "547605105167",
+    "firebase_url": "https://my-apps-a40e4.firebaseio.com",
+    "project_id": "my-apps-a40e4",
+    "storage_bucket": "my-apps-a40e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547605105167:android:fd53a152c89e557b",
+        "android_client_info": {
+          "package_name": "com.best.wallpapers.iphone7.imad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547605105167-l9ibfufgf3ib73nkj1qbn45jq5d7bd7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.best.wallpapers.iphone7.imad",
+            "certificate_hash": "f12417cee607fb7c6feb18823608896edccad866"
+          }
+        },
+        {
+          "client_id": "547605105167-f1pbp1talmue95559mv2fbun7d9r5d7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFbLnUmqUa2b-TOq-QvIWr-AmFdiXR2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547605105167-937obqvf43f9480v9f3h63bo3namjt9p.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.kbspronos.app"
+              }
+            },
+            {
+              "client_id": "547605105167-f1pbp1talmue95559mv2fbun7d9r5d7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547605105167:android:196bba641c0667dd",
+        "android_client_info": {
+          "package_name": "com.ionicframework.isstighfar770454"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547605105167-f1pbp1talmue95559mv2fbun7d9r5d7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFbLnUmqUa2b-TOq-QvIWr-AmFdiXR2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547605105167:android:78e3b8fb0cdcc5f9",
+        "android_client_info": {
+          "package_name": "com.pullman.marrakech.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547605105167-f1pbp1talmue95559mv2fbun7d9r5d7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFbLnUmqUa2b-TOq-QvIWr-AmFdiXR2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547605105167:android:93a3f5a41896ced3",
+        "android_client_info": {
+          "package_name": "net.kbspronos.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547605105167-f1pbp1talmue95559mv2fbun7d9r5d7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdFbLnUmqUa2b-TOq-QvIWr-AmFdiXR2w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+
+<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+</style>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+<script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+<script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+<script src="js/jquery-ui.js"></script>
+  <script>
+  jQuery(function() {
+	  if(jQuery( "#accordion" ).length){
+		jQuery( "#accordion" ).accordion({
+		  heightStyle: "content",
+		  collapsible: true
+		});
+		jQuery('#ui-id-1').click();
+	  }
+  });
+  </script>
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = dd+'/'+mm+'/'+yyyy;
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84481440-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<title>PULLMAN MARRAKECH PALMERAIE RESORT & SPA</title>
+</head>
+
+<body>
+<div id="site">
+<div id="header">
+	<div class="logo"><a href="index-fr.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="header-right"><img src="images/circle-header.png" alt=""></div>
+</div>
+<div id="main">
+        <div class="container">
+		        <div class="row">            
+        	<div class="col-sm-12">
+            	<h2 class="text-center text-uppercase page-titre">INFOS PRATIQUES</h2>
+                                <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+                                    <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SE DEPLACER</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true"><p style="text-align: center;"><strong>PENDANT VOTRE SÉJOUR</strong></p>
+<hr>
+<p style="text-align: center;"><strong>Navettes Hôtel - centre-ville (Complexe Artisanal) :</strong><br>
+9h-10h-11h-12h-15h-16h-17h-18h<br>
+Navettes centre-ville (Complexe Artisanal) - Hôtel :<br>
+10h30-11h30-12h30-15h30-16h30-17h30-18h30-20h<br>
+Service Gratuit - Places Limitées - Réservation à la Réception<br>
+ou au N°9 depuis votre chambre<br>
+- ou -<br>
+<strong>Transfert privé</strong> : A toute heure du jour et de la nuit<br>
+Tarifs : 200 DH par trajet (3 personnes) - Réservation à<br>
+la Réception ou au N°9 depuis votre chambre</p>
+
+<hr>
+<p style="text-align: center;"><strong>JUSQU'A L'AEROPORT</strong>
+<p style="text-align: center;"><strong>Transfert privé</strong> : A toute heure du jour et de la nuit<br>
+Tarifs : 200 DH par trajet (3 personnes) - Réservation à<br>
+la Réception ou au N°9 depuis votre chambre</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SOIGNER LES PETITS BOBOS…</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true"><p style="text-align: center;">L'infirmerie est ouverte <strong>tous les jours de 9h à 17h</strong></p>
+<p style="text-align: center;">!!! Vous pouvez commander vos médicaments via le service<br>
+d'infirmerie mais notre infirmière n'est pas autorisée à vous<br>
+délivrer ceux-ci, d'elle même.</p>
+<p style="text-align: center;">Composez <strong>le n°747</strong> depuis votre chambre</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>FAIRE DES AMPLETTES</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Ouverte <strong> tous les jours de 9h à 13h et de 14h30 à 18h<!--tous les jours de 9h à 13h et de 14h à 18h--></strong><br>
+Rendez-vous à la Boutique en face de l'Infirmerie pour un moment shopping !<br>
+<p style="text-align: center;">
+&bull; Cigarettes<br>
+&bull; Produits de première nécessité<br>
+&bull; Presse<br>
+&bull; Souvenirs<br>
+</p>
+<p style="text-align: center;">Et par-dessus tout, un accueil chaleureux…</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>RESTER CONNECTE</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true"><p style="text-align: center;">L'espace <strong>Connectivity Lounge</strong> au niveau du Lobby vous
+accueille 7j/7 et 24h/24</p>
+<p style="text-align: center;">Restez connectés via nos ordinateurs tactiles et imprimez à volonté !</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SE SITUER DANS LE RESORT</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true">
+                    <img src="images/plan-chambres.gif" alt="">
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>FAIRE GARDER SES ENFANTS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: block;" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="false"><p style="text-align: center;">Du temps pour soi? C'est possible!</p>
+<p style="text-align: center;">Service disponible à toute heure et dès l'âge de 1 an, des
+nurses diplômées par l'Etat prendront soin de vos bébés et des animateurs professionnels pour les 4 ans et plus, le temps 
+d'une escapade, ou bien deux…</p>
+<p style="text-align: center;">TARIFS : 150 DH / Heure - Baby Sitting en chambre
+<br>
+Renseignez-vous auprès de la Réception ou auprès du Kids
+Club ou composez le N°9 depuis votre chambre.</p>
+</div>                               
+                                        </div>
+                                </div>
+        </div>     
+                </div>
+</div>
+</div>
+</body>
+</html>

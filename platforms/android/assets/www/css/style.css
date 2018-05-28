@@ -1,0 +1,513 @@
+@font-face {
+    font-family: 'Abadi MT Std';
+    src: url('fonts/AbadiMTStd-Bold.woff2') format('woff2'),
+        url('fonts/AbadiMTStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abadi MT Std';
+    src: url('fonts/AbadiMTStd-Light.woff2') format('woff2'),
+        url('fonts/AbadiMTStd-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abadi MT Std';
+    src: url('fonts/AbadiMTStd.woff2') format('woff2'),
+        url('fonts/AbadiMTStd.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'futura_md_btmedium';
+    src: url('fonts/8051781869-webfont.eot');
+    src: url('fonts/8051781869-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/8051781869-webfont.woff2') format('woff2'),
+         url('fonts/8051781869-webfont.woff') format('woff'),
+         url('fonts/8051781869-webfont.ttf') format('truetype'),
+         url('fonts/8051781869-webfont.svg#futura_md_btmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	outline:none;
+	font-family: 'Abadi MT Std';
+}
+.mb15{
+	 margin-bottom:15px;
+ }
+.container{
+	width:100%;
+}
+ #site{
+	 width:100%;
+	 max-width:800px;
+	 margin:0 auto;
+ }
+#header{
+	overflow:hidden;
+	padding: 10px 0 20px;
+}
+#header .logo{
+	float:left;
+	max-width:28.90625%;
+	margin-left:2.864583333333333%;
+	margin-top:18px;
+}
+#header .logo img{
+	max-width:100%;
+}
+#header .header-right{	
+	float:right;
+	max-width:7.03125%;
+}
+#header .header-right img{
+	max-width:100%;
+}
+#main{
+	background:url(../images/bg_02.png) no-repeat center bottom;
+	-moz-background-size: 98% auto;           /* Gecko 1.9.2 (Firefox 3.6) */
+	-o-background-size: 98% auto;           /* Opera 9.5 */
+    -webkit-background-size: 98% auto;           /* Safari 3.0 */
+	background-size: 98% auto;           /* Gecko 2.0 (Firefox 4.0) et les autres navigateurs gérant CSS3 */
+	min-height:900px;
+}
+img.w100{
+	width:100%;
+	max-width:100%;
+}
+.informations-home{
+	position:relative;
+}
+.informations-home .text-info{
+	position:absolute;
+	bottom:10px;
+	left:0;
+	width:100%;
+	padding:10px;
+	margin:0;
+	background-color: rgba(218, 231, 234, 0.75);
+	font-size:20px;
+}
+.meteo{
+	position:relative;
+}
+.meteo .date{
+	position:absolute;
+	left:0;
+	top:0;
+	line-height:36px;
+	width:100%;
+	color:#FFF;
+	font-size:16px;
+}
+.meteo .meteo-aujourdhui{
+	position:absolute;
+	left:0;
+	top:35px;
+	width:100%;
+	color:#FFF;
+	font-size:52px;
+}
+.meteo .meteo-aujourdhui img{
+	margin-top:-10px;
+	margin-left:10px;
+}
+.meteo .meteo-aujourdhui img.icone-meteo{
+	margin-right:90px;
+}
+.meteo .meteo-demain{
+	line-height:36px;
+	position:absolute;
+	left:0;
+	bottom:10px;
+	width:100%;
+	color:#3f3e3e;
+	font-size:20px;
+	background-color: rgba(218, 231, 234, 0.75);
+	margin:0;
+}
+.meteo .meteo-demain img{
+	margin-top:-2px;
+	margin-left:5px;
+}
+.meteo .meteo-demain span{
+	display:inline-block;
+	margin-right:150px;
+	font-size:16px;
+}
+.menu-home{
+	margin:14px 0 0 0;
+	overflow:hidden;
+}
+.menu-home ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu-home ul li{
+	margin-top:15px;
+}
+.menu-home ul li a{
+	display:block;
+	background:#2f5c97;
+	color:#FFF;
+	font-size:18px;
+	line-height:42px;
+}
+.menu-home ul li a:hover{
+	text-decoration:none;
+}
+.livre-dor-titre,
+.footer h2{
+	font-size:20px;
+	color:#2f5c97;
+	margin-top:15px
+}
+.liste-press{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.liste-press li{
+	margin:0 0 10px;
+	overflow:hidden;
+}
+.liste-press li img{
+	float:left;
+	margin:0 10px 0 0;
+}
+.liste-press li h3{
+	background:url(../images/puce-press.png) no-repeat left center;
+	margin:0 0 6px;
+	padding-left:15px;
+	font-size:15px;
+	color:#ca39db;
+}
+.liste-press li h3 a{
+	color:#ca39db;
+}
+.liste-press li p a{
+	font-size:14px;
+	color:#3d3c3c;
+}
+.liste-press li a:hover{
+	text-decoration:none;
+}
+.reseaux-sociaux ul{
+	padding:0;
+	margin:0 0 20px 38px;
+	list-style:none;
+}
+.reseaux-sociaux ul li{
+	background-image:url(../images/reseaux-sociaux.png);
+	background-repeat:no-repeat;
+	padding:0;
+	margin:0 0 6px;
+	line-height:44px;
+	font-size:19px;
+	padding-left:60px;
+}
+.reseaux-sociaux ul li a,
+.reseaux-sociaux ul li a:hover,
+.reseaux-sociaux ul li a:active,
+.reseaux-sociaux ul li a:focus{
+	text-decoration:none;
+	color:#333333;
+	outline:none;
+}
+.reseaux-sociaux ul li.instagram{
+	background-position:0 0;
+}
+.reseaux-sociaux ul li.twitter{
+	background-position:0 -50px;
+}
+.reseaux-sociaux ul li.facebook{
+	background-position:0 -103px;
+	font-size:16px;
+	line-height:22px
+}
+.reseaux-sociaux ul li.youtube{
+	background-position:0 -156px;
+}
+.a-table{
+	padding:0;
+	list-style:none;
+}
+.a-table li{
+	margin-bottom:20px;
+}
+.a-table-img{
+	position:relative;
+}
+.text-info-table{
+	position:absolute;
+	left:0;
+	width:100%;
+	top:30%;
+}
+.text-info-table h2{
+	margin:0;
+	padding:0;
+	background:url(../images/ligne.gif) no-repeat center bottom;
+	color:#FFF;
+}
+.text-info-table p{
+	margin:0;
+	padding:0;
+	color:#FFF;
+	font-size:14px;
+	margin-top:10px;
+}
+.texte-a-table{
+	min-height:110px;
+}
+.dis-table{
+	display:table;
+	width:100%
+}
+.dis-table > div{
+	display:table-row;
+}
+.dis-table > div p{
+	display:table-cell;
+	vertical-align:middle;
+	height:110px;
+	background-color: rgba(218, 231, 234, 0.75);
+	font-size:14px;
+	color:#38b7ff;
+	padding:0 5px
+}
+.page-titre{
+	font-size:20px;
+	background-color: #4d0942;
+	color:#FFF;
+	margin:0 0 20px;
+	line-height:40px;
+}
+.bg-bis{
+	background:#4d0942;
+	color:#FFF;
+	font-size: 20px;
+}
+.ui-accordion-header{
+	line-height:50px;
+	background:#2f5c97;
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	cursor:pointer;
+	margin-bottom:0;
+	font-weight: 700;
+}
+.ui-accordion-content{
+	background:#728ea4;
+	padding:10px;
+	color:#FFF;
+	font-weight: 300;
+}
+.ui-accordion-content strong{
+	font-weight: normal;
+}
+.ui-accordion-content img{
+	width:100%;
+	height:auto;
+}
+hr{
+	width:75%;
+	border-width:1px;
+	margin:10px auto;
+	border-top:1px solid #FFF;
+}
+.pre-home{
+	background:url(../images/bg-home.png) no-repeat center bottom;
+	-moz-background-size: 100% auto;           /* Gecko 1.9.2 (Firefox 3.6) */
+	-o-background-size: 100% auto;           /* Opera 9.5 */
+    -webkit-background-size: 100% auto;           /* Safari 3.0 */
+	background-size: 100% auto;           /* Gecko 2.0 (Firefox 4.0) et les autres navigateurs gérant CSS3 */
+	width:100%;
+	max-width:800px;
+	margin:0 auto;
+	height:100%;
+	overflow:hidden;
+}
+
+#pre-home .container{
+	background:url(../images/logo-bg.png) no-repeat right top;
+	width:100%;
+	max-width:800px;
+}
+#pre-home .logo{
+	margin:21.68724279835391% 0 31.68724279835391% 0;
+}
+.thumbnail{
+	border:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.bt-ok{
+	width:150px;
+}
+.liste-language{
+	width:100%;
+	max-width:480px;
+	margin:10% auto;
+	list-style:none;
+	padding:0;
+}
+.liste-language li:first-child{
+	border-bottom:solid 1px #3d3c3c;
+}
+.liste-language li.fr{
+	background:url(../images/fr.png) no-repeat right center;
+}
+.liste-language li.en{
+	background:url(../images/en.png) no-repeat right center;
+}
+.liste-language li label{
+	line-height:70px;
+	position:relative;
+	color:#3d3c3c;
+	font-size:30px;
+	font-weight:normal;
+	cursor:pointer;
+	padding-left:30px;
+	display:block;
+}
+.liste-language li label:before{
+	background:url(../images/radio.gif) no-repeat left bottom;
+	position:absolute;
+	content:'';
+	width:16px;
+	height:16px;
+	left:0;
+	top:25px;
+}
+.liste-language li label.active:before{
+	background:url(../images/radio.gif) no-repeat left top;
+}
+ #livre-dor{
+	 background: rgba(114, 142, 164, 0.75);
+    list-style: outside none none;
+    margin: 15px 0;
+    padding: 0;
+ }
+.livre{
+	padding:15px 20px;
+}
+.livre h3{
+	margin:0;
+	color:#FFF;
+	font-size:16px;
+	text-align:right;
+}
+.livre p{
+	color:#FFF;
+	font-size:14px;
+}
+
+
+
+.owl-theme .owl-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"] {
+    background: #d6d6d6 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+}
+.owl-theme .owl-controls .owl-nav [class*="owl-"]:hover {
+    background: #869791 none repeat scroll 0 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.owl-theme .owl-controls .owl-nav .disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #d6d6d6 none repeat scroll 0 0;
+    border-radius: 30px;
+    display: block;
+    height: 10px;
+    margin: 5px 7px;
+    transition: opacity 200ms ease 0s;
+    width: 10px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #869791 none repeat scroll 0 0;
+}
+.livre p{
+	position:relative;
+	padding:0 0 0 10px;
+	margin:15px 0;
+	font-weight: 300;
+}
+.livre p:after, .livre p:before{
+	background: rgba(0, 0, 0, 0) url("../images/double-cote.png") no-repeat scroll 0 0;
+    content: "";
+    height: 16px;
+    left: -10px;
+    position: absolute;
+    top: -6px;
+    width: 21px;
+}
+.livre p:after{
+	background-position: right top;
+    bottom: -4px;
+    left: inherit;
+    top: inherit;
+}
+@media (max-width: 767px) {
+	.footer h2{
+		font-size:18px;
+	}
+	.reseaux-sociaux ul li{
+	}
+	.reseaux-sociaux ul{
+		margin-left:10px;
+	}
+	.reseaux-sociaux ul li{
+		font-size:16px;
+	}
+	.reseaux-sociaux ul li.facebook{
+		font-size:15px;
+	}
+	.informations-home{
+		margin-bottom:20px;
+	}
+	.meteo .meteo-aujourdhui{
+		font-size:40px;
+		top:20px;
+	}
+	#header .logo{
+		max-width:40%;
+	}
+	.liste-language{
+		max-width:300px;
+	}
+	#pre-home .logo{
+		margin:20px 0 20px;
+		width:195px;
+	}
+	#pre-home .container{
+		background:none;
+	}
+	
+.livre{
+	padding:10px;
+}
+}

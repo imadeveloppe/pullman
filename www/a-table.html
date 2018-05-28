@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+
+<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+</style>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+<script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+<script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.simpleWeather.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+  <script>
+  jQuery(function() {
+	  if(jQuery( "#accordion" ).length){
+		jQuery( "#accordion" ).accordion({
+		  heightStyle: "content",
+		  collapsible: true
+		});
+		jQuery('#ui-id-1').click();
+	  }
+  });
+  </script>
+<script>
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd='0'+dd
+} 
+
+if(mm<10) {
+    mm='0'+mm
+} 
+
+today = dd+'/'+mm+'/'+yyyy;
+</script>
+<title>PULLMAN MARRAKECH PALMERAIE RESORT & SPA</title>
+</head>
+
+<body>
+<div id="site">
+<div id="header">
+	<div class="logo"><a href="index-fr.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="header-right"><img src="images/circle-header.png" alt=""></div>
+</div>
+<div id="main">
+        <div class="container">
+		        <h1 class="text-center text-uppercase page-titre">A table !</h1>
+        <ul class="row mb15 a-table">
+        			<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/oliveraie.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>OLIVERAIE</h2><p>Restaurant Principal</p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">OUVERT TOUS LES JOURS<br>
+Matin : 7h00 - 10h30<br>
+Midi : 12h30 -15h00<br>
+Soir : 19h30 - 22h30<br>
+Buffet continental et oriental</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/mezze.png">
+                        <div class="text-info-table text-center text-uppercase"><h2>MEZZE</h2><p>Restaurant Libanais Marocain</p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">OUVERT TOUS LES JOURS<br>
+19h30 - 22h30<br>
+Sous réservation à la Réception</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/oliveraie2.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>BARAMIKA</h2><p>Snack Bar</p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">OUVERT 24/24 - 7/7</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/oasis.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>OASIS</h2><p>Pool Bar</p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">OUVERT TOUS LES JOURS<br>
+10h00 - 18h00<br>
+<br>
+(Commandes de nourriture à partir de 15h00 pour les All Inclusive)</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/room-service.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>ROOM SERVICE</h2><p></p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">24/24 - 7/7<br>
+De vos chambres : N°80</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-6">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/bar-ambiance.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>BAR AMBIANCE</h2><p></p></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">09h - Minuit</p></div>
+                        </div>
+                    </div>
+                </li>
+		        </ul>
+                </div>
+</div>
+</div>
+</body>
+</html>

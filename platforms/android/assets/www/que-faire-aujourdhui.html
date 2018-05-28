@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+
+<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+@-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+@-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+</style>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="cordova.js"></script>          <!-- phantom library, needed for Cordova api calls, added during build -->
+<script src="js/app.js"></script>           <!-- recommended location of your JavaScript code relative to other JS files -->
+<script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+<script src="js/jquery-ui.js"></script>
+<script>
+$.getJSON('http://pullman-marrakech.com/application/donnees.json',function(data){
+		$('.good-morning h2').text(data.titre);
+		$('.good-morning img').attr('src',data.photo);
+		$('.good-morning p').html(data.texte);
+		
+		$('.cet-apres-midi h2').text(data.titre_02);
+		$('.cet-apres-midi img').attr('src',data.photo_02);
+		$('.cet-apres-midi p').html(data.texte_02);
+		
+		$('.en-soiree h2').text(data.titre_03);
+		$('.en-soiree img').attr('src',data.photo_03);
+		$('.en-soiree p').html(data.texte_03);
+});
+  jQuery(function() {
+	  if(jQuery( "#accordion" ).length){
+		jQuery( "#accordion" ).accordion({
+		  heightStyle: "content",
+		  collapsible: true
+		});
+		jQuery('#ui-id-1').click();
+	  }
+  });
+  </script>
+<title>PULLMAN MARRAKECH PALMERAIE RESORT & SPA</title>
+</head>
+
+<body>
+<div id="site">
+<div id="header">
+	<div class="logo"><a href="index-fr.html"><img src="images/logo.png" alt=""></a></div>
+	<div class="header-right"><img src="images/circle-header.png" alt=""></div>
+</div>
+<div id="main">
+        <div class="container">
+		        <div class="row">
+        	<div class="col-sm-6">
+            	<h2 class="text-center text-uppercase page-titre bg-bis">QUE FAIRE AUJOURD'HUI ?</h2>
+                <ul class="row mb15 a-table">
+        			<li class="col-sm-12 good-morning">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/01.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>GOOD MORNING !</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">09H30 LOUNGE<br>
+
+REVEIL MUSCULAIRE<br>
+<br>
+11H00 OASIS<br>
+ATELIER FLORAL
+
+</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-12 cet-apres-midi">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/02.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>CET APRES-MIDi</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">15H00 PISCINE<br>
+AQUAGYM</p></div>
+                        </div>
+                    </div>
+                </li>
+					<li class="col-sm-12 en-soiree">
+                    <div class="a-table-img">
+                        <img class="w100" alt="" src="images/03.jpg">
+                        <div class="text-info-table text-center text-uppercase"><h2>EN SOIREE…</h2></div>
+                    </div>
+                    <div class="row">
+                    	<div class="col-sm-12 dis-table">
+                        	<div><p class="texte-a-table text-center">21H00 BAR AMBIANCE<br>
+
+SOIREE SALSA
+
+</p></div>
+                        </div>
+                    </div>
+                </li>
+		        </ul>
+            </div>
+        	<div class="col-sm-6">
+            	<h2 class="text-center text-uppercase page-titre bg-bis">ET SINON...</h2>
+                                <div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+                                    <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>KIDS VILLAGE</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Ouvert tous les jours<strong> sauf le lundi pour désinfection</strong> des locaux.</p>
+<p><img width="300" height="200" alt="17 (35)" src="images/17-35-300x200.jpg" class="alignnone size-medium wp-image-111"></p>
+<hr>
+<p style="text-align: center;">9h30-12h30 / 14h30-17h30</p>
+<hr>
+<p style="text-align: center;">1-4 ans : Service payant<br>
+4-12 ans : Service gratuit</p>
+<hr>
+<p>Activités : Karting, dromadaire, escalade, football, poterie, mini-golf, ping pong, canoë, pédalo, trampoline…<br>
+Soirées à thème tout au long des vacances scolaires</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SPA</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Ouvert <strong>tous les jours de 10h00 à 20h00</strong></p>
+<hr>
+<p style="text-align: center;">Le <strong>Spa Lounge by Nuxe</strong> vous invite à la détente en vous proposant un choix de soins corps et visage, ainsi qu'une sélection de massages adaptés à vos besoins… Une vaste gamme de produits <strong>Nuxe</strong> sont utilisés pour votre plus grand plaisir ainsi que les produits de soin de <strong>notre grand Maître de Parfum Benchâabane…</strong></p>
+<p><img width="256" height="300" alt="spa-07" src="images/spa-07-256x300.jpg" class="alignnone size-medium wp-image-71"></p>
+<p style="text-align: center;">Venez découvrir notre carte de soins sur place…</p>
+<hr>
+<p style="text-align: center;">Composez&nbsp;<strong>le 60</strong> depuis votre chambre</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>NOS DEUX PISCINES</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"><p style="text-align: center;"><strong>PISCINE PRINCIPALE</strong><br>Ouverte <strong>tous les jours de 9h à 18h</strong></p>
+<hr>
+<p style="text-align: center;"><strong>ZEN PULL</strong><br>Non accessible aux -16 ans, votre "Piscine Zen" vous offre un calme inégalable entre lac et Palmiers, aux mêmes horaires d'ouverture que notre Piscine Principale.</p>
+<hr>
+<p style="text-align: center;">Pour vous procurer une <strong>serviette de piscine</strong>, veuillez présenter la carte qui vous a été attribuée lors de votre arrivée, à notre poolboy lors de votre passage au PullHouse.</p>
+<hr>
+<p style="text-align: center;">Des <strong>toilettes</strong> sont à votre disposition à côté du PullHouse</p>
+<hr>
+<p style="text-align: center;"><img width="300" height="161" alt="piscne (1)" src="images/piscne-1-300x161.jpg" class="alignnone size-medium wp-image-141"></p>
+<p style="text-align: center;">Installez-vous, relaxez-vous… &amp; Enjoy !</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>PEDALO &amp; KAYAK </h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Nos pédalos et kayaks sont accessibles de <strong>9h à 12h</strong> et de <strong>15h à 17h</strong> au plan d'eau.</p>
+<hr>
+<p style="text-align: center;">Les enfants de <strong>-12 ans</strong> sont priés de porter <strong>un gilet de sauvetage</strong> (Disponibles au PullHouse)</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>TENNIS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Vos<strong> 2 cours</strong> de tennis sont accessibles&nbsp;<strong>de 9h à 18h, sous réservation à la réception.&nbsp;</strong></p>
+<hr>
+<p style="text-align: center;">Du matériel vous est prêté sur demande au Pull House.</p>
+<hr>
+<p style="text-align: center;">Un <strong>professeur de tennis</strong> est disponible du lundi au samedi sur demande à la Réception</p>
+<p><img width="300" height="200" alt="LEISURE" src="images/LEISURE-300x200.jpg" class="alignnone size-medium wp-image-113"></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>PING PONG</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" style="display: block;" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="false"><p style="text-align: center;">Matériel accessible au Pull House&nbsp;<strong>aux horaires d'ouverture de la piscine&nbsp;</strong></p>
+<p style="text-align: center;"><img width="220" height="147" alt="maxresdefault-1" src="images/maxresdefault-1-300x200.jpg" class="aligncenter wp-image-131 "></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>MINI GOLF</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Matériel accessible au Pull House&nbsp;<strong>aux horaires d'ouverture de la piscine&nbsp;</strong></p>
+<p><p><img width="300" height="300" alt="mini golf" src="images/mini-golf-300x300.jpg" class="alignnone size-medium wp-image-143"></p></p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>PARCOURS DE SANTE</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Un parcours de santé a été minutieusement conçu pour vous, par un professionnel du sport.</p>
+<p style="text-align: center;">D'une distance de 1,1 Km, il est jonché de points clés destinés à vous faire travailler plusieurs parties du corps.</p>
+<p style="text-align: center;"><img width="200" height="300" alt="" src="images/capture-decran-200x300.png" class="alignnone size-medium wp-image-138"></p>
+<p style="text-align: center;">N'hésitez pas à vous adresser à <strong>Youssef</strong> pour toute information complémentaire.</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>SALLE DE FITNESS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true"><p style="text-align: center;">Ouverte <strong>tous les jours de 8h à 22h</strong> et <strong>accessible en dehors de ces horaires</strong> sur demande à la Réception</p>
+<hr>
+<p><img width="300" height="201" alt="fitness-lowcoast-rue-du-bien-etre" src="images/fitness-lowcoast-rue-du-bien-etre-300x201.jpg" class="alignnone size-medium wp-image-159"></p>
+<ul>
+<li>1 heliptique</li>
+<li>2 vélos</li>
+<li>2 tapis de courses</li>
+<li>Steps</li>
+<li>Banc de Musculation</li>
+<li>Haltères</li>
+<li>Tapis de fitness…</li>
+</ul>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>PRIVILEGE Lounge &amp; Garden </h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true">
+<p style="font-family:Georgia, 'Times New Roman', Times, serif; font-style:italic; font-size:13px; text-align: left;" ><sup style="font-size:26px; font-family:Arial, Helvetica, sans-serif; top:5px;">&ldquo;</sup> Un sublime mélange de douceur et de sérénité…<sub style="font-size:26px; font-family:Arial, Helvetica, sans-serif; bottom:-19px;">&rdquo;</sub></p>
+<p style="text-align: center;"><img width="300" height="197" alt="DSC_2055" src="images/DSC_2055-300x197.jpg" class="alignnone size-medium wp-image-153"></p>
+<p style="text-align: center;">Ouvert <strong>de 16h à Minuit tous les jours</strong>, l'endroit 'Cosy' du Pullman vous propose une sélection de boissons, chichas et cigares, à partager au coin du feu ou au beau milieu des jardins…</p>
+</div>                 
+                                        <h3 class="ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>BUREAU D'EXCURSIONS</h3>   
+                    <div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" style="display: none;" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true"><p style="text-align: center;"><strong>Ouvert tous les jours sauf le mardi, de 9h à 13h et de 14h à 18h &nbsp;</strong>votre bureau d'excursions vous propose une <strong>multitude d'activités sur Marrakech et ses environs</strong>.</p>
+<p style="text-align: center;"><img width="300" height="114" alt="imgres" src="images/imgres-1-300x114.jpg" class="alignnone size-medium wp-image-134"></p>
+<p style="text-align: center;">N'hésitez pas à y faire un tour ou composez <strong>le n° 88</strong> depuis votre chambre</p>
+</div>                 
+                                        </div>
+                                </div>
+        </div>     
+                </div>
+</div>
+</div>
+</body>
+</html>
